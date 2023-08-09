@@ -20,6 +20,10 @@ export default async function ItemSingle({
         currency_id: string;
         thumbnail: string;
         permalink: string;
+        pictures: {
+          id: string;
+          url: string;
+        }[];
       }>
   );
 
@@ -38,10 +42,11 @@ export default async function ItemSingle({
       </Link>
       <div className="flex gap-x-4 mb-4">
         <img
-          src={item.thumbnail}
+          src={item.pictures[0].url}
           alt={item.title}
-          width={150}
-          className="aspect-square w-52 object-cover"
+          width={96}
+          height={96}
+          className="aspect-square w-24 h-24 object-cover"
         />
         <div>
           <h2>{item.title}</h2>

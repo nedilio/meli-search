@@ -32,10 +32,11 @@ async function SearchPage({
         <Link href={`/items/${item.id}?search=${search}`} key={item.id}>
           <div className="flex gap-4">
             <img
+              className="w-24 h-24 aspect-square object-cover"
               src={item.thumbnail}
               alt={item.title}
-              width={90}
-              className="aspect-square object-cover"
+              width={96}
+              height={96}
             />
             <h2>{item.title}</h2>
             <div className="opacity-70 text-sm ml-auto flex flex-col justify-center items-end">

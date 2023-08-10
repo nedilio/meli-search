@@ -44,9 +44,9 @@ export default async function ItemSingle({
         <img
           src={item.pictures[0].url}
           alt={item.title}
-          width={96}
-          height={96}
-          className="aspect-square w-24 h-24 object-cover"
+          width={120}
+          height={120}
+          className="aspect-square w-[120px] h-[120px] object-cover"
         />
         <div>
           <h2>{item.title}</h2>
